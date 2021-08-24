@@ -1,0 +1,17 @@
+@Library ('luke-method-overloading') import c360.devops.DeploymentTools
+
+pipeline {
+
+    agent any
+
+    stages {
+        stage("method-overloading") {
+            steps {
+                script {
+
+                    echo "hello"
+                }
+            }
+        }
+    }
+}
